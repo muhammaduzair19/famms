@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.navbar {
+    padding: 0 12vw;
+    height: 11vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 10px 0 rgb(6, 0, 0);
+}
+
+.nav-items {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    /* background-color: rgb(94, 94, 161); */
+}
+
+.nav-items a:hover {
+    color: #F7444E;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav-item2:hover {
+    color: #F7444E;
+}
+
+.dropDownContent {
+    position: absolute;
+    background-color: white;
+    width: 12vw;
+    padding: 1rem;
+    height: 6vw;
+    box-shadow: 5px 5px 0px black;
+}
+
+.show {
+    display: none;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+}
+
+.about {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    height: calc(100% - 12vh);
+}
+
+.about .heading {
+    width: 100%;
+    height: 20vh;
+    background-color: #F7444E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+
+.testimonials{
+    
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials h2{
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 4vw;
+    
+}
+.testimonials h2::after{
+    content: "";
+    width: 8vw;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: 0.4vw;
+    background-color: #F7444E;
+    text-align: center;
+}
+.review-container{
+    font-family: 'Montserrat', sans-serif;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+    /* background-color: #000000; */
+}
+.review-container .top{
+    display: flex;
+    /* background-color: #002C3E; */
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+.review-container .top .left, .right
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #F7444E;
+    color: white;
+    font-size: large;
+
+}
+.review-container .top img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: 800;
+    margin: 10px 0;
+}
+.desc{
+    color: #D4CED0;
+    margin: 5px 0;
+}
+.review{
+text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 80vh;
+    background-color: #002C3E;
+    padding: 0 12vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+    padding-top: 8vw;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+
+    width: 100%;
+    display: flex;
+    gap: 13vw;
+
+}
+
+.description h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+.description .location {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.other {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    width: 30%;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    gap: 0.5vw;
+}
+
+.icons a i {
+    color: #002C3E;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid rgb(200, 224, 240);
+    width: 60%;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.copyright a {
+    color: #F7444E;
+    text-decoration: none;
+    font-size: large;
+}

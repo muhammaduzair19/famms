@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Famms</title>
+</head>
+
+<body>
+    <div id="main">
+        <nav class="navbar">
+            <a href="./index.html">
+                <img id="logo" width="250" src="./images/logo.png" alt="">
+            </a>
+            <div class="nav-items">
+                <a href="#">
+                    <h4 id="nav-item1">HOME</h4>
+                </a>
+
+                <h4 id="nav-item2" onclick="dropDown()">PAGES
+                    <div class="dropDownContent show">
+                        <div class="display">
+                            <a href="./about/index.html">About</a>
+                            <a href="./testimonials/index.html">Testimonial</a>
+                        </div>
+                    </div>
+                </h4>
+
+
+                <a href="./products/index.html">
+                    <h4 id="nav-item3">PRODUCTS</h4>
+                </a>
+                <a href="./blog/index.html">
+                    <h4 id="nav-item4">BLOG</h4>
+                </a>
+                <a href="./contact/index.html">
+                    <h4 id="nav-item4">CONTACT</h4>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="crousel">
+                <div class="item item-selected">
+                    <h3><span class="pink">Sale 20% Off </span>On Everything</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,suscipit consequuntur vel
+                        ullam labore quas dolorum libero ipsa consequatur impedit sunt molestiae odit possimus vero,
+                        harum natus officia quod optio aliquid asperiores in.</p>
+                    <div class="btn">
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3><span class="pink">Sale 20% Off </span>On Everything</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,suscipit consequuntur vel
+                        ullam labore quas dolorum libero ipsa consequatur impedit sunt molestiae odit possimus vero,
+                        harum natus officia quod optio aliquid asperiores in.</p>
+                    <div class="btn">
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <h3><span class="pink">Sale 20% Off </span>On Everything</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,suscipit consequuntur vel
+                        ullam labore quas dolorum libero ipsa consequatur impedit sunt molestiae odit possimus vero,
+                        harum natus officia quod optio aliquid asperiores in.</p>
+                    <div class="btn">
+                        <button class="shop-now">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="crousel-nav">
+                    <span class="btn select"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mid-section">
+            <h2>
+                Why Shop With Us
+            </h2>
+            <div class="box">
+                <div id="box-1" class="box-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div id="box-2" class="box-item">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <h3>Chat Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+                <div id="box-3" class="box-item">
+                    <i class="fa-regular fa-hand-peace"></i>
+                    <h3>Best Quality</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="new-arrival-section">
+            <div class="bg-img"></div>
+            <div class="text-item">
+                <h3>#New Arrivals</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis,suscipit consequuntur vel
+                    ullam labore quas dolorum libero ipsa consequatur impedit sunt molestiae odit possimus vero,
+                    harum natus officia quod optio aliquid asperiores in.</p>
+                <div class="btn">
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <h2>Our <span class="productpink">Products</span></h2>
+            <div class="row">
+                <div class="product-box">
+                    <img src="./images/p1.png" style="width: 160px;">
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div id="btns">
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+
+                </div>
+                <div class="product-box">
+                    <img src="./images/p2.png" style="width: 170px;">
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$80</p>
+                    </span>
+                    <div id="btns">
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p3.png">
+                    <span>
+                        <h3>Women's Dress</h3>
+                        <p>$68</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-box">
+                    <img src="./images/p4.png">
+                    <span>
+                        <h3>Women's Dress</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p5.png" style="width: 100px;">
+                    <span>
+                        <h3>Women's Dress</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p6.png" style="width: 180px;">
+                    <span>
+                        <h3>Women's Dress</h3>
+                        <p>$58</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-box">
+                    <img src="./images/p7.png">
+                    <span>
+                        <h3>Women's Dress</h3>
+                        <p>$85</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p8.png">
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p9.png">
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-box">
+                    <img src="./images/p10.png">
+
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p11.png">
+                    <span>
+                        <h3>Men's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <img src="./images/p12.png">
+                    <span>
+                        <h3>Women's Shirt</h3>
+                        <p>$75</p>
+                    </span>
+                    <div>
+                        <button id="cart">
+                            Add to Cart
+                        </button>
+                        <button id="buynow">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <button>
+                View All Products
+            </button>
+        </div>
+        <div class="newsletter">
+            <h5>Subscribe To Get Discount Offers</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, accusantium.</p>
+            <input type="email" placeholder="Enter your email" name="" id="">
+            <button>SUBSCRIBE</button>
+        </div>
+        <div class="testimonials">
+            <h2>Customer's Testimonial</h2>
+            <div class="review-container">
+                <div class="top">
+                    <button class="left">
+                        <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <img src="./images/client.jpg" alt="">
+                    <button class="right">
+                        <i class="fa-sharp fa-solid fa-arrow-left-long fa-rotate-180"></i>
+                    </button>
+                </div>
+                <p class="name">Anna Trevor</p>
+                <p class="desc">Customer</p>
+                <p class="review">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, maxime quisquam labore
+                    pariatur ducimus sit possimus illum voluptate sequi soluta ea fugiat fuga quibusdam repudiandae
+                    consectetur numquam mollitia obcaecati. Dolores quidem soluta libero!</p>
+            </div>
+        </div>
+
+        <div class="down-menu">
+            <div class="col col-1">
+                <a href="./index.html">
+                    <img id="logo" width="250" src="./images/logo.png" alt="">
+                </a>
+                <p><span>ADDRESS:</span> 28 White tower, Street Name New York City, USA</p>
+                <p><span>TELEPHONE:</span> +923123-790080</p>
+                <p><span>EMAIL:</span> your@email.com</p>
+            </div>
+            <div class="col">
+                <h4>MENU</h4>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="./about/index.html">About</a>
+                    <a href="#">Services</a>
+                    <a href="./testimonials/index.html">Testimonial</a>
+                    <a href="./blog/index.html">Blog</a>
+                    <a href="./contact/index.html">Contact</a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>ACCOUNT</h4>
+                <div class="links">
+                    <a href="#">Account</a>
+                    <a href="#">Checkout</a>
+                    <a href="#">Login</a>
+                    <a href="#">Register</a>
+                    <a href="./products/index.html">Shopping</a>
+                    <a href="#">Widget</a>
+                </div>
+            </div>
+            <div class="col col-4">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe by our newsletter and get update protidin.</p>
+                <label class="email">
+                    <input type="text" name="" id="">
+                    <button>Subscribe</button>
+                </label>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 All rights reserved by <span><a
+                        href="www.github.com/muhammaduzair19">muhammaduzair19</a></span> </p>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            const cart = document.getElementById("cart")
+            const buy = document.getElementById("buynow")
+            const btns = document.getElementById("btns")
+            const product = document.querySelector(".product-box")
+
+            console.log(cart, buy, btns, product)
+            $(".product-box").hover(function () {
+                $("#btns").fadeIn("slow")
+            })
+        })
+    </script>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
